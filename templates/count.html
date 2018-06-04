@@ -1,13 +1,14 @@
-<h1>There are {{ count }} words</h1>
+<h1 style="color:SlateBlue">There are {{ count }} words</h1>
 
 <a href="{% url 'home' %}">Start Again</a>
 
 <a href = "{% url 'about' %}">About</a>
 
-<h1>Original:</h1>
-{{ fulltext }}
+<h1 style="color:MediumSeaGreen">Original:</h1>
 
-<h1>Counting</h1>
+<h1 style="color:DodgerBlue">{{ fulltext }}</h1>
+
+<h1 style="color:Violet">Counting</h1>
  {% for word, counttotal in worddictionary %}
      {{ word }} - {{ counttotal }}
      <br />
